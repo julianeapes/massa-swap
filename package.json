@@ -1,0 +1,18 @@
+{
+  "name": "massa-swap",
+  "version": "1.0.0",
+  "description": "Init a massa smart contract development project",
+  "author": "Julian",
+  "private": false,
+  "scripts": {
+    "build": "massa-sc-scripts build-sc src/token.ts && massa-sc-scripts build-sc src/swap.ts && massa-sc-scripts build-sc src/main.ts",
+    "clean": "massa-sc-scripts clean"
+  },
+  "dependencies": {
+    "assemblyscript": "^0.19.20",
+    "json-as": "^0.2.6",
+    "massa-sc-scripts": "4.0.1",
+    "massa-sc-std": "3.1.2",
+    "visitor-as": "^0.6.0"
+  }
+}
